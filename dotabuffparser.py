@@ -62,6 +62,10 @@ class Dotabuffparser():
         self.matches_label = Label(self.tab1, text='')
         self.avatar_label = Label(self.tab1, text='')
 
+        # Лейбл для tab2
+        self.top_label = Label(self.tab1, text='Топ 5 героев')
+        self.top_label.pack()
+
     def get_account(self):
         self.link = self.input_link.get()  # Получаем ссылку из поля ввода
         try:
